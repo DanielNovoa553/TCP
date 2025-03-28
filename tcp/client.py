@@ -24,11 +24,11 @@ def start_client():
 
         while True:
             try:
-                message = input("Introduzca un mensaje: ").strip()  # .strip() removes leading/trailing spaces
+                message = input("Introduzca un mensaje: ").strip()
 
                 if not message:
                     print("El mensaje no puede estar vacío. Inténtelo nuevamente.")
-                    continue  # Skip the current iteration and ask for input again
+                    continue
 
                 client.send(message.encode('utf-8'))
 
